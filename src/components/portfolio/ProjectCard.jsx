@@ -3,7 +3,6 @@ import GlassCard from '../ui/GlassCard.jsx';
 
 export default function ProjectCard({
   number,
-  year,
   title,
   description,
   image,
@@ -16,7 +15,6 @@ export default function ProjectCard({
     <GlassCard as="article" className="project-card">
       <div className="project-card__media">
         <img src={image} alt={imageAlt} loading="lazy" />
-        {year ? <span className="project-card__year">{year}</span> : null}
       </div>
       <div className="project-card__body">
         <div className="project-card__topline">

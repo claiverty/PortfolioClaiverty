@@ -1,19 +1,9 @@
-export default function Button({
-  children,
-  href,
-  variant = 'primary',
-  icon: Icon,
-  iconPosition = 'right',
-  className = '',
-  external = false,
-  ...props
-}) {
-  const classNames = ['button', `button--${variant}`, className].filter(Boolean).join(' ');
+export default function Button({ children, href, variant = 'primary', icon: Icon, external = false, ...props }) {
+  const classNames = ['button', `button--${variant}`].join(' ');
   const content = (
     <>
-      {Icon && iconPosition === 'left' ? <Icon aria-hidden="true" size={17} /> : null}
       <span>{children}</span>
-      {Icon && iconPosition === 'right' ? <Icon aria-hidden="true" size={17} /> : null}
+      {Icon ? <Icon aria-hidden="true" size={17} /> : null}
     </>
   );
 

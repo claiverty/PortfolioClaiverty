@@ -1,13 +1,9 @@
-export default function SectionTitle({ id, title, accent = '.', align = 'left', className = '' }) {
+export default function SectionTitle({ id, title }) {
   return (
-    <div
-      className={['section-title', align === 'center' ? 'center' : '', className]
-        .filter(Boolean)
-        .join(' ')}
-    >
+    <div className="section-title">
       <h2 id={id}>
         {title}
-        {accent ? <span>{accent}</span> : null}
+        <span>.</span>
       </h2>
     </div>
   );

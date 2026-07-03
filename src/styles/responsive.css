@@ -41,7 +41,6 @@
     padding: 54px 0 42px;
   }
 
-  .about__grid,
   .contact__grid {
     grid-template-columns: 1fr;
   }
@@ -71,10 +70,6 @@
     width: 100%;
     min-height: 44px;
     padding: 0 18px;
-  }
-
-  .button--ghost {
-    width: auto;
   }
 
   .hero__inner {
@@ -134,7 +129,6 @@
     padding: 48px 0;
   }
 
-  .about__grid,
   .contact__grid {
     gap: 28px;
   }

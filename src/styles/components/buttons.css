@@ -59,17 +59,3 @@
   border-color: var(--color-border-strong);
   background: rgba(255, 255, 255, 0.045);
 }
-
-.button--ghost {
-  min-height: 38px;
-  border-color: rgba(255, 54, 95, 0.34);
-  border-radius: 999px;
-  background: rgba(255, 54, 95, 0.05);
-  color: var(--color-text);
-  font-size: 0.75rem;
-}
-
-.button--ghost:hover {
-  background: rgba(255, 54, 95, 0.12);
-  border-color: rgba(255, 54, 95, 0.7);
-}
