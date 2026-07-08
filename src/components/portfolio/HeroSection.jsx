@@ -52,13 +52,15 @@ export default function HeroSection() {
         <div className="hero__visual" data-reveal style={{ '--reveal-delay': '120ms' }}>
           <GlassCard className="portrait-card">
             <img
-              src="https://images.unsplash.com/photo-1630332458839-5ece43363621?w=420&h=540&fit=crop&crop=faces&auto=format"
+              src="/assets/claiverty-hero.png"
               alt="Claiverty Rodrigues, desenvolvedor de software"
+              decoding="async"
+              fetchPriority="high"
             />
           </GlassCard>
           <div className="location-badge">
             <MapPin aria-hidden="true" size={15} />
-            Brasília, DF · Remoto
+            Formosa, GO
           </div>
         </div>
       </div>

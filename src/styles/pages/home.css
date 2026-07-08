@@ -116,22 +116,23 @@
 }
 
 .portrait-card {
+  aspect-ratio: 0.78;
   padding: 8px;
   border-color: rgba(255, 255, 255, 0.18);
 }
 
 .portrait-card img {
   width: 100%;
-  aspect-ratio: 0.78;
+  height: 100%;
   border-radius: 22px;
   object-fit: cover;
-  filter: grayscale(1) contrast(1.08) brightness(0.9);
+  object-position: center;
 }
 
 .location-badge {
   position: absolute;
   left: 18px;
-  right: 18px;
+  right: auto;
   bottom: 18px;
   z-index: 2;
   display: flex;
@@ -254,6 +255,18 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+}
+
+.projects__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.projects__footer .button {
+  min-height: 42px;
+  padding: 0 18px;
+  font-size: 0.78rem;
 }
 
 .contact__grid {

@@ -1,0 +1,18 @@
+{
+  "name": "Claiverty Rodrigues | Portfolio",
+  "short_name": "Claiverty",
+  "description": "Portf\u00f3lio de Claiverty Rodrigues, desenvolvedor full stack.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/assets/claiverty.png",
+      "sizes": "640x640",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

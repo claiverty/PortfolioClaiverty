@@ -1,3 +1,4 @@
+import { Github } from 'lucide-react';
 import Button from '../ui/Button.jsx';
 import SectionTitle from '../ui/SectionTitle.jsx';
 import ProjectCard from './ProjectCard.jsx';
@@ -8,9 +9,6 @@ export default function ProjectsSection() {
       <div className="section-container">
         <div className="projects__header" data-reveal>
           <SectionTitle id="projects-title" title="Projetos" />
-          <Button href="https://github.com/claiverty" variant="secondary" external>
-            Todos os projetos
-          </Button>
         </div>
         <div className="projects__grid" data-reveal style={{ '--reveal-delay': '80ms' }}>
           <ProjectCard
@@ -57,6 +55,11 @@ export default function ProjectsSection() {
             <li>PostgreSQL</li>
             <li>OAuth2</li>
           </ProjectCard>
+        </div>
+        <div className="projects__footer" data-reveal style={{ '--reveal-delay': '120ms' }}>
+          <Button href="https://github.com/claiverty" variant="secondary" icon={Github} external>
+            {'Ver reposit\u00f3rios'}
+          </Button>
         </div>
       </div>
     </section>

@@ -9,6 +9,17 @@
 
   .projects__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .project-card {
+    min-height: 480px;
+    grid-template-rows: 190px 1fr;
+  }
+
+  .project-card__body {
+    gap: 15px;
+    padding: 24px;
   }
 }
 
@@ -50,7 +61,22 @@
   }
 
   .projects__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .project-card {
+    min-height: 440px;
+    grid-template-rows: 170px 1fr;
+  }
+
+  .project-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .project-card p {
+    font-size: 0.88rem;
+    line-height: 1.45;
   }
 }
 
@@ -92,8 +118,18 @@
   }
 
   .hero__actions {
-    display: grid;
+    flex-wrap: nowrap;
+    gap: 8px;
     margin-top: 24px;
+  }
+
+  .hero__actions .button {
+    width: auto;
+    min-width: 0;
+    flex: 1 1 0;
+    padding: 0 10px;
+    font-size: 0.72rem;
+    white-space: nowrap;
   }
   .social-rail {
     align-items: stretch;
@@ -118,8 +154,24 @@
     max-width: none;
   }
 
-  .portrait-card img {
+  .portrait-card {
     aspect-ratio: 1.2;
+  }
+
+  .location-badge {
+    left: 12px;
+    right: auto;
+    bottom: 12px;
+    max-width: calc(100% - 24px);
+    gap: 5px;
+    padding: 7px 10px;
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+
+  .location-badge svg {
+    width: 12px;
+    height: 12px;
   }
 
   .about,
@@ -148,41 +200,103 @@
     line-height: 1.62;
   }
 
-  .about__meta,
+  .about__meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .skills__columns {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .about__meta {
+    gap: 8px;
     margin-top: 18px;
+    padding-top: 14px;
+  }
+
+  .about__meta div {
+    border-radius: 14px;
+    padding: 10px;
+  }
+
+  .about__meta dt {
+    margin-bottom: 4px;
+    font-size: 0.7rem;
+  }
+
+  .about__meta dd {
+    font-size: 0.9rem;
+    line-height: 1.25;
+  }
+
+  .skills__content {
+    gap: 1.8rem;
+  }
+
+  .skills__columns {
+    gap: 20px;
   }
 
   .skill-column h3 {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    font-size: 1.05rem;
   }
 
   .skill-column ul {
-    gap: 5px;
+    gap: 4px;
+  }
+
+  .skill-column li {
+    font-size: 0.92rem;
+    line-height: 1.28;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .project-card {
-    grid-template-rows: 160px 1fr;
-    border-radius: 24px;
+    min-height: 0;
+    grid-template-rows: 140px 1fr;
+    border-radius: 22px;
   }
 
   .project-card__body {
-    gap: 12px;
-    padding: 18px;
+    gap: 10px;
+    padding: 16px;
   }
 
   .project-card__number {
-    font-size: 2.4rem;
+    font-size: 2rem;
+  }
+
+  .project-card__actions {
+    gap: 8px;
   }
 
   .project-card__actions a {
-    width: 38px;
-    height: 38px;
-    border-radius: 14px;
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.82rem;
+    line-height: 1.42;
+  }
+
+  .project-card ul {
+    gap: 6px;
+  }
+
+  .project-card li {
+    padding: 5px 8px;
+    font-size: 0.66rem;
   }
 
   .projects__header {
@@ -190,10 +304,23 @@
     margin-bottom: 24px;
   }
 
+  .projects__footer {
+    margin-top: 24px;
+  }
+
+  .projects__footer .button {
+    width: fit-content;
+  }
+
   .contact-form {
     gap: 24px;
     padding: 22px;
     border-radius: 24px;
+  }
+
+  .contact-form .button {
+    width: fit-content;
+    justify-self: center;
   }
 
   .contact__copy > p:not(.section-lead),
@@ -203,14 +330,60 @@
 
   .footer__inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
     padding: 0 0 4px;
+    text-align: center;
+  }
+
+  .footer__inner p {
+    font-size: 0.7rem;
+    white-space: nowrap;
   }
 }
 
 @media (max-width: 400px) {
   .hero__title {
     font-size: 3.35rem;
+  }
+
+  .footer__inner p {
+    font-size: 0.6rem;
+  }
+
+  .hero__actions {
+    gap: 6px;
+  }
+
+  .hero__actions .button {
+    min-height: 40px;
+    padding: 0 8px;
+    font-size: 0.66rem;
+  }
+
+  .about__meta {
+    gap: 14px 8px;
+  }
+
+  .skills__columns {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .about__meta div {
+    padding: 9px 8px;
+  }
+
+  .about__meta dd {
+    font-size: 0.76rem;
+  }
+
+  .skill-column h3 {
+    font-size: 1rem;
+  }
+
+  .skill-column li {
+    font-size: 0.88rem;
   }
 }
 
