@@ -8,7 +8,7 @@ export default function HeroSection() {
       <div className="section-container hero__inner">
         <div className="hero__content" data-reveal>
           <p className="hero__availability">
-            <span aria-hidden="true">-&gt;</span> Disponível para projetos · 2026
+            <span aria-hidden="true">-&gt;</span> Desenvolvedor de Software
           </p>
           <h1 id="home-title" className="hero__title">
             <span>Claiverty</span>
