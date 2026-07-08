@@ -179,6 +179,8 @@
   .projects,
   .contact {
     padding: 48px 0;
+    content-visibility: auto;
+    contain-intrinsic-size: 720px;
   }
 
   .contact__grid {

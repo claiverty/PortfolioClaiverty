@@ -7,6 +7,8 @@ export default function ProjectCard({
   description,
   image,
   imageAlt,
+  imageWidth,
+  imageHeight,
   href,
   repository,
   children,
@@ -14,7 +16,15 @@ export default function ProjectCard({
   return (
     <GlassCard as="article" className="project-card">
       <div className="project-card__media">
-        <img src={image} alt={imageAlt} loading="lazy" />
+        <img
+          src={image}
+          alt={imageAlt}
+          loading="lazy"
+          decoding="async"
+          fetchPriority="low"
+          width={imageWidth}
+          height={imageHeight}
+        />
       </div>
       <div className="project-card__body">
         <div className="project-card__topline">

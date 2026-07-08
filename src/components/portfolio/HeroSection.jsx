@@ -51,12 +51,17 @@ export default function HeroSection() {
 
         <div className="hero__visual" data-reveal style={{ '--reveal-delay': '120ms' }}>
           <GlassCard className="portrait-card">
-            <img
-              src="/assets/claiverty-hero.png"
-              alt="Claiverty Rodrigues, desenvolvedor de software"
-              decoding="async"
-              fetchPriority="high"
-            />
+            <picture>
+              <source media="(max-width: 640px)" srcSet="/assets/claiverty-hero-640.jpg" />
+              <img
+                src="/assets/claiverty-hero-900.jpg"
+                alt="Claiverty Rodrigues, desenvolvedor de software"
+                width="900"
+                height="1599"
+                decoding="async"
+                fetchPriority="high"
+              />
+            </picture>
           </GlassCard>
           <div className="location-badge">
             <MapPin aria-hidden="true" size={15} />

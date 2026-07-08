@@ -121,9 +121,14 @@
   border-color: rgba(255, 255, 255, 0.18);
 }
 
+.portrait-card picture,
 .portrait-card img {
+  display: block;
   width: 100%;
   height: 100%;
+}
+
+.portrait-card img {
   border-radius: 22px;
   object-fit: cover;
   object-position: center;

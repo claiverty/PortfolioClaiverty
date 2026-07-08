@@ -15,8 +15,10 @@ export default function ProjectsSection() {
             number="01"
             title="Comercial Sagarana - LP e Sistema de Gestão"
             description="O sistema permite divulgar promoções, facilitar o contato com clientes e realizar o controle interno de ofertas e vendas diárias através de um dashboard administrativo."
-            image="/assets/projects/comercial-sagarana.png"
+            image="/assets/projects/comercial-sagarana-card.jpg"
             imageAlt="Comercial Sagarana"
+            imageWidth={900}
+            imageHeight={444}
             href="https://comercialsagarana.vercel.app/"
             repository="https://github.com/claiverty/comercialSagarana3.0"
           >
@@ -30,8 +32,10 @@ export default function ProjectsSection() {
             number="02"
             title="Cabeleleila Leila - Sistema de Agendamento"
             description="Sistema de gerenciamento de um salão de beleza, permitindo que clientes realizem reservas e que a administradora controle os atendimentos."
-            image="/assets/projects/cabeleleila-leila.png"
+            image="/assets/projects/cabeleleila-leila-card.jpg"
             imageAlt="Interface do sistema Cabeleleila Leila"
+            imageWidth={900}
+            imageHeight={444}
             href="https://cabeleleilaleila.vercel.app/"
             repository="https://github.com/claiverty/CabeleleilaLeila"
           >
@@ -47,6 +51,8 @@ export default function ProjectsSection() {
             description="Este é o site de votação para a premiação anual da comunidade de torcedores do São Paulo FC no Discord."
             image="https://images.unsplash.com/photo-1625838144804-300f3907c110?w=600&h=240&fit=crop&auto=format"
             imageAlt="Editor de código em tela escura"
+            imageWidth={600}
+            imageHeight={240}
             href="https://ballondorspfc.vercel.app/"
             repository="https://github.com/claiverty/BallondOrSPFC"
           >
@@ -58,7 +64,7 @@ export default function ProjectsSection() {
         </div>
         <div className="projects__footer" data-reveal style={{ '--reveal-delay': '120ms' }}>
           <Button href="https://github.com/claiverty" variant="secondary" icon={Github} external>
-            {'Ver reposit\u00f3rios'}
+            {'Ver repositórios'}
           </Button>
         </div>
       </div>
