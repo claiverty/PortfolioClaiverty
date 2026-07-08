@@ -14,7 +14,7 @@ export default function AboutSection() {
                 Sistemas.
               </p>
               <p>
-                Atuo como desenvolvedor full stack, criando soluções digitais completas que conectam interface, lógica de
+                Atuo como desenvolvedor de software, criando soluções digitais completas que conectam interface, lógica de
                 negócio, automações, sistemas web e integrações inteligentes. Trabalho sempre buscando desenvolver
                 projetos funcionais, bem estruturados e com boa experiência para o usuário.
               </p>
@@ -28,7 +28,7 @@ export default function AboutSection() {
             <dl className="about__meta">
               <div>
                 <dt>Atuação</dt>
-                <dd>Desenvolvimento Full Stack</dd>
+                <dd>Desenvolvimento de Software</dd>
               </div>
               <div>
                 <dt>Entrego</dt>

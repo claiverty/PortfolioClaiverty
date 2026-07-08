@@ -12,7 +12,7 @@ export default function ContactSection() {
             <SectionTitle id="contact-title" title="Contato" />
             <p className="section-lead">Vamos transformar ideias em soluções reais.</p>
             <p>
-              Estou aberto a oportunidades, projetos e colaborações em desenvolvimento full stack, sistemas web, automações e soluções com inteligência artificial.
+              Estou aberto a oportunidades, projetos e colaborações em desenvolvimento de software, sistemas web, automações e soluções com inteligência artificial.
             </p>
             <ul className="contact__links" aria-label="Links de contato">
               <li>
