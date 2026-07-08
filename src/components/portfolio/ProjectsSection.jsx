@@ -49,10 +49,10 @@ export default function ProjectsSection() {
             number="03"
             title="Comunidade SPFC - Sistema de Votação"
             description="Este é o site de votação para a premiação anual da comunidade de torcedores do São Paulo FC no Discord."
-            image="https://images.unsplash.com/photo-1625838144804-300f3907c110?w=600&h=240&fit=crop&auto=format"
-            imageAlt="Editor de código em tela escura"
-            imageWidth={600}
-            imageHeight={240}
+            image="/assets/projects/ballon-dor-spfc-card.jpg"
+            imageAlt="Interface do sistema Comunidade SPFC"
+            imageWidth={900}
+            imageHeight={600}
             href="https://ballondorspfc.vercel.app/"
             repository="https://github.com/claiverty/BallondOrSPFC"
           >
