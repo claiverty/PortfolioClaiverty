@@ -55,3 +55,10 @@
 .form-field:focus-within label {
   color: var(--color-accent);
 }
+.contact-form .button {
+  width: fit-content;
+  min-height: 42px;
+  justify-self: center;
+  padding: 0 24px;
+  font-size: 0.78rem;
+}
