@@ -65,7 +65,7 @@ export default function HeroSection() {
           </GlassCard>
           <div className="location-badge">
             <MapPin aria-hidden="true" size={15} />
-            Formosa, GO
+            Brasília, DF
           </div>
         </div>
       </div>
